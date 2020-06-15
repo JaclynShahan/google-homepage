@@ -1,0 +1,1 @@
+Building a homepage layout using the basics of git functionality and basic html/css
