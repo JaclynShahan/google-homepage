@@ -1,33 +1,120 @@
 <!DOCTYPE html>
 <html>
-    <body id="main">
-        <div class="navigation" id="navbar">
+
+<body id="main">
+    <style>
+        #main {
+            font-family: arial, sans-serif;
+           
+          }
+          #navbar {
+            height: 233px;
+            margin-top: 30px;
+            font-size: medium;
+            padding-left: 20px;
+           padding-right: 20px;
+          
+          }
+     
+        
+        .right {
+            float: right;
+          
+        }
+        .left {
+          float: left;
+         
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline;
+            overflow: hidden;
+        }
+      li {
+        margin: 5px;
+      }
+      .content {
+        text-align: center;
+      }
+      .align {
+        text-align: center;
+      }
+      #search {
+        border-radius: 30px;
+        height: 40px;
+        width: 50%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .button {
+        height: 35px;
+        width: 150px;
+        background-color: #F0F0F0;
+        margin-top: 25px;
+        font-size: 15px;
+      }
+      .footer {
+        background-color: #F0F0F0;
+        text-align: center;
+        width: 100%;
+        display: block;
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        height: 40px;
+        padding-top: 10px;
+       
+      }
+      .font-color {
+        color: #606060;
+      }
+      .google-image {
+        height: 100px;
+        width: 300px;
+        margin: 10px;
+      }
+        .icon {
+           height: 35px;
+           width: 35px;
+
+        }
+        </style>
+    <div class="navigation" id="navbar">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#store">Store</a></li>
-            <li style="float:right"><a href="#gmail">Gmail</a></li>
-            <li style="float:right"><a href="#images">Images</a></li>
-            <li style="float:right"><a href="#apps"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAHlBMVEX///8AAAD09PTLy8uUlJSPj4/5+fnl5eXNzc3IyMgWJBrXAAABJklEQVR4nO3cQQ6CMBRFUSwtpfvfsAv4qD8EI6nnzF/0MhMpywIAAAAAAAAAcC+j1YQt7Hpm13rYbZmPa+PCwvbIKPHKpHbxm5bUrl1YWE8WrqnderKwKlSoUKFChQoVKlSoUKFChQoVKlSoUKFChQoVKlSoUKFChRcW7qndfoPCrWQcDL+6i89+AAAAAO/1sX4Wb0YsJbMbBz/y98wuntM4z3mLV4Xz32tTqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoX3K5z/f/z5n8UAAACA/zD/OxXmfy/G/PfaFCpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFDhPIXzn7cYrSbEZyN6ZtfiuYkt83EtXhkAAAAAAAAAgN96AuUrQOqYK1c6AAAAAElFTkSuQmCC" alt="apps image"/></a></li>
-            <li style="float:right"><a href="#home"><img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="home image"/></a></li>
+            <li class="left" style="padding-top: 10px"><a class="font-color" href="#about">About</a></li>
+            <li class="left" style="padding-top: 10px"><a class="font-color" href="#store">Store</a></li>
+            <li class="right"><a href="#apps"><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAHlBMVEX///8AAAD09PTLy8uUlJSPj4/5+fnl5eXNzc3IyMgWJBrXAAABJklEQVR4nO3cQQ6CMBRFUSwtpfvfsAv4qD8EI6nnzF/0MhMpywIAAAAAAAAAcC+j1YQt7Hpm13rYbZmPa+PCwvbIKPHKpHbxm5bUrl1YWE8WrqnderKwKlSoUKFChQoVKlSoUKFChQoVKlSoUKFChQoVKlSoUKFChRcW7qndfoPCrWQcDL+6i89+AAAAAO/1sX4Wb0YsJbMbBz/y98wuntM4z3mLV4Xz32tTqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoX3K5z/f/z5n8UAAACA/zD/OxXmfy/G/PfaFCpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFDhPIXzn7cYrSbEZyN6ZtfiuYkt83EtXhkAAAAAAAAAgN96AuUrQOqYK1c6AAAAAElFTkSuQmCC"
+                        alt="apps image" /></a></li>
+            <li class="right"><a href="#home"><img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png"
+                        alt="home image" /></a></li>
+            <li class="right" style="padding-top: 10px"><a class="font-color" href="#gmail">Gmail</a></li>
+            <li class="right" style="padding-top: 10px"><a class="font-color" href="#images">Images</a></li>
         </ul>
-        </div>
-        <div class="content" id="body">
-        <img src="https://cdn.vox-cdn.com/thumbor/BDbjzltcuiIao017pxyvpUtYiZQ=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/55481409/jbareham_170504_1691_0004.0.0.jpg" alt="google title"/>
-        </div>
-        <div>
-        <input type="search" name="search" id="search"/>
-        <input type="button" onclick="alert('Successful')" value="Google Search" />
-        <input type="button" onclick="alert('Successful')" value="I'm Feeling Lucky" />
-        </div>
-        <div class="footer" id="footer">
-            <ul>
-                <li>Advertising</li>
-                <li>Business</li>
-                <li>How Search Works</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Settings</li>
-            </ul>
-        </div>
-    </body>
+    </div>
+    <div class="content" id="body">
+        <img class="google-image" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="google title" />
+    </div>
+    <div class="align">
+        <input type="search" name="search" id="search" />
+    </div>
+    <div class="align">
+        <input class="button font-color" style="margin-right: 10px" type="button" onclick="alert('Successful')" value="Google Search" />
+        <input class="button font-color" type="button" onclick="alert('Successful')" value="I'm Feeling Lucky" />
+    </div>
+    </div>
+    <div>
+        <ul class="footer">
+            <li class="left"><a class="font-color" href="#advertising">Advertising</a></li>
+            <li class="left"><a class="font-color" href="#business">Business</a></li>
+            <li class="left"><a class="font-color" href="#howsearchworks">How Search Works</a></li>
+            <li class="right"><a class="font-color" href="#privacy">Privacy</a></li>
+            <li class="right"><a class="font-color" href="#terms">Terms</a></li>
+            <li class="right"><a class="font-color" href="#settings">Settings</a></li>
+        </ul>
+    </div>
+</body>
+
 </html>
